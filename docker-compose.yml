@@ -1,0 +1,8 @@
+services:
+  powered-dind:
+    build:
+      context: .
+    env_file:
+      - .env
+    restart: always
+    privileged: true
