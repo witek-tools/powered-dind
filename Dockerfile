@@ -56,8 +56,8 @@ RUN chmod +x /usr/local/bin/docker-credential-ecr-login
 COPY dockerd-entrypoint.sh /usr/local/bin/dockerd-entrypoint.sh
 RUN chmod +x /usr/local/bin/dockerd-entrypoint.sh
 
-# Set the entrypoint to the new entrypoint script
-ENTRYPOINT ["/usr/local/bin/dockerd-entrypoint.sh"]
+# Set the entrypoint to the new entrypoint script, and pass 'dockerd' as the default command
+ENTRYPOINT ["/usr/local/bin/dockerd-entrypoint.sh", "dockerd"]
 
 # Default CMD Command
 CMD []
