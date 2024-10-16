@@ -1,5 +1,5 @@
 
-# Powered Dind - Powered Docker-in-Docker Image with Buildx, Node.js and ECR Credential Helper
+# Powered Dind - Powered Docker-in-Docker Image with Buildx, Node.js and AWS
 
 Welcome to the official repository of Powered Docker-in-Docker, a Docker image designed to improve the CI/CD experience for our employees. This project is maintained by **[Witek](https://www.witek.com.br)**.
 
@@ -10,7 +10,7 @@ This repository contains a Docker image that includes:
 - **Node.js**: Version 20 with `pnpm` for efficient package management.
 - **Docker-in-Docker (DinD)**: Enabling Docker builds inside containers.
 - **Buildx**: Full support for Docker BuildKit for advanced multi-platform builds.
-- **Amazon ECR Credential Helper**: For seamless integration with Amazon Elastic Container Registry (ECR).
+- **AWS**: For seamless integration with AWS.
 
 ## How to Use
 
