@@ -6,7 +6,7 @@ DOCKER_COMPOSE=DOCKER_BUILDKIT=1 docker compose -f docker-compose.yml
 
 # Command to bring up the container and rebuild the image
 up:
-	$(DOCKER_COMPOSE) up --build -d
+	$(DOCKER_COMPOSE) up --remove-orphans --build -d
 
 # Command to stop the containers
 down:
@@ -14,7 +14,7 @@ down:
 
 # Command to restart the containers (stop and start with build)
 restart:
-	$(DOCKER_COMPOSE) down && $(DOCKER_COMPOSE) up --build -d
+	$(DOCKER_COMPOSE) down && $(DOCKER_COMPOSE) up --remove-orphans --build -d
 
 # Command to enter the container directly, with wait logic
 shell:
